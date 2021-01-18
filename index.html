@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Teste HTML, PHP, JAVASCRIPT E MYSQL</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div>
+            <label for="nome">Produto
+                <input type="text" id="nome" name="nome">
+            </label>
+            <label for="">Preços
+                <input type="number" step="any" id="precos" name="precos">
+            </label>
+            <label for="">Cores
+                <select name="cores" id="cores">
+                    <option></option>
+                    <option value="AZUL">AZUL</option>
+                    <option value="VERMELHO">VERMELHO</option>
+                    <option value="AMARELO">AMARELO</option>
+                </select>
+            </label>
+            <button id="insert">INSERÇÃO</button>
+            <button id="update">ATUALIZAÇÃO</button>
+            <button id="delete">EXCLUSÃO</button>
+        </div>
+        <div>
+            <div class="filters">
+                <h2>Filtros:</h2>
+                <label for="filtro_produto">Produto
+                    <input type="text" name="filtro_produto" id="filtro_produto">
+                </label>
+                <label for="filtro_preco">Preço
+                    <input type="text" name="filtro_preco" id="filtro_preco">
+                </label>
+                <label for="cores_filtro">Cor
+                    <select name="cores_filtro" id="cores_filtro">
+                        <option value="0"></option>
+                        <option value="AZUL">AZUL</option>
+                        <option value="VERMELHO">VERMELHO</option>
+                        <option value="AMARELO">AMARELO</option>
+                    </select>
+                </label>
+                <div class="filter_buttons">
+                    <button id="filter">Filtrar</button>
+                    <button id="clean_filter">Limpar filtros</button>   
+                </div>
+            </div>
+
+            <table id="produtos_tabela">
+                <thead>
+                    <th>Produto</th>
+                    <th>Cor</th>
+                    <th>Preço</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/index.js"></script>
+</html>
